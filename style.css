@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.master-holder{
+  background-color: white;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+.master-holder h1{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  text-align: center
+}
+.slave-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.playlist-widget-wrapper{
+  width: 25%;
+}
+.playlist-widget{
+  width: fit-content;
+  background-color: rgb(88, 58, 61);
+  padding: 25px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.playlist-widget2{
+  width: fit-content;
+  background-color: rgb(47, 69, 78);
+  padding: 30px;
+  border-radius: 20px;
+}
+.playlist-widget-info {
+  display: flex;
+  gap: 16px;
+}
+.album-art{
+  width: 50%;
+  height: 50%;
+  border-radius: 16px;
+  z-index: 1;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.playlist-info{
+  display: flex;
+  flex-direction: column;
+}
+.Spotify-icon{
+  width: 35px;
+  height: 35px;
+  margin-left: 135px;
+  margin-bottom: 8px;
+}
+.playlist-info h1{
+  font-size: 28px;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.playlist-info h1:hover{
+  text-decoration: underline;
+}
+.playlist-info a{
+ text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+  opacity: 0.6;
+}
+.playlist-info a:hover{
+  text-decoration: underline;
+}
+.button{  
+  display: flex;  
+  align-items: center;
+  font-size: 14px;
+  gap: 14px;
+}
+.button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.button img{
+  background: transparent;
+  width: 28px;
+  border: none;
+}
+span{
+  color: white;
+  opacity: 0.6;
+  font-size: 16px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 11s linear infinite;
+  -webkit-animation: marquee 11s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-80%);
+}
+}
+.music-icons{
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+}
+.play-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-left: 85px;
+  cursor: pointer;
+}
+.button2{
+  width: 20%;
+  height: 25px;
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.button3{
+  width: 56px;
+  background-color: white;
+  height: 56px;
+  border-radius: 50%;
+  margin-top: -36px;
+  border: none;
+  transform: all 5s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: all 5s;
+  -moz-transform: all 5s;
+  -ms-transform: all 5s;
+  -o-transform: all 5s;
+}
+.button3 img{
+  margin-left: 4px;
+  margin-top: 4px;
+}
+.button3:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.song-list-holder{ 
+  background-color: rgba(0,0,0,.1);
+  max-height: 296px;
+  overflow-y: scroll;
+  margin-top: 18px;
+}
+ul{
+  margin-top: 18px;
+  color: white;
+}
+ul li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  padding: 8px;
+  transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+}
+ul li:hover{
+  background-color: rgba(0,0,0,.1);
+  height: 100%;
+  border-radius: 4px; 
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+ul li span:hover {
+  background-image: url(./images/play-button.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
